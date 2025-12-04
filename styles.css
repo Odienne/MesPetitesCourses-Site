@@ -83,11 +83,8 @@ p { margin: 0 0 1rem; color: hsl(var(--muted-foreground)); }
 .brand {
   display: inline-flex; align-items: center; gap: 0.75rem; font-weight: 700;
 }
-.brand .logo {
-  width: 36px; height: 36px; border-radius: 9px;
-  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.7) 100%);
-  display: inline-flex; align-items: center; justify-content: center; color: hsl(var(--primary-foreground));
-  font-weight: 800;
+.brand .logo img {
+  width: 36px; height: 36px; border-radius: 3px;
 }
 .nav-links { display: none; gap: 1rem; }
 .nav-cta { display: none; }
@@ -239,3 +236,5 @@ p { margin: 0 0 1rem; color: hsl(var(--muted-foreground)); }
 .prose li { margin: 0.25rem 0; color: hsl(var(--muted-foreground)); }
 .prose a { color: hsl(var(--foreground)); text-decoration: underline; }
 .prose a:hover { opacity: 0.85; }
+.prose .btn { text-decoration: none; }
+.prose pre { padding: 0.75rem 1rem; background: hsl(var(--muted)); border: 1px solid hsl(var(--border)); border-radius: calc(var(--radius) - 2px); overflow: auto; }
